@@ -132,8 +132,15 @@ h2 {
   color: hsl(176, 68%, 64%);
 }
 
-.reviews {
+.quote {
+  position: relative;
   margin-top: 80px;
+  margin-left: 4%;
+  bottom: -25px;
+  z-index: 1;
+}
+
+.reviews {
   padding: 20px;
   width: 90%;
   display: flex;
@@ -149,6 +156,7 @@ h2 {
   font-size: 12px;
   box-sizing: border-box;
   margin-bottom: 20px;
+  z-index: 5;
 }
 
 .reviewer {
@@ -234,6 +242,7 @@ footer img {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  padding-right: 10px;
 }
 
 .small-icons {
@@ -251,7 +260,7 @@ ul {
   padding: 0;
 }
 
-@media (min-width: 376px) {
+@media (min-width: 576px) {
   .background-top {
     background-image: url(../images/bg-curvy-desktop.svg);
   }
@@ -327,6 +336,10 @@ ul {
   h2 {
     width: 50%;
     font-size: 30px;
+  }
+
+  .quote {
+    bottom: -20px;
   }
 
   .reviews {
